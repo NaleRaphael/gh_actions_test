@@ -45,7 +45,7 @@ jobs:
 
       - name: Run tests and generate coverage
         run: |
-          pytest --cov=torch_lr_finder --cov-report=xml tests/
+          pytest --cov=mymod --cov-report=xml tests/
 
       - name: Upload coverage to Codecov
         if: matrix.python-version == 3.8 && matrix.pytorch-version == '1.5.0'
