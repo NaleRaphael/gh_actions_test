@@ -13,3 +13,7 @@ def test_lr_scheduler_last_epoch():
         assert scheduler.last_epoch == -1
     else:
         assert scheduler.last_epoch == 0
+
+
+def test_version_branch():
+    mymod.dummy_func_for_branch_test()
