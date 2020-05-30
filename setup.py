@@ -28,6 +28,13 @@ def setup_package():
         install_requires=get_requirements(),
         python_requires='>=3.4',
         license='MIT',
+        extras_require={
+            "tests": ["pytest", "pytest-cov"],
+            "dev": [
+                "pytest",
+                "pytest-cov",
+            ],
+        },
     )
 
     setup(**metadata)
